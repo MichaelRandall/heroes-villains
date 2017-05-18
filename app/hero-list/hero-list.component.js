@@ -1,16 +1,11 @@
+'use strict';
 
-
+//register `heroList` component and its template and controller
 angular.
-	module('heroesvilliansApp').
+	module('heroList').
 		component('heroList', {
-			template:
-				'<ul>' +
-					'<li ng-repeat="hero in $ctrl.heroes">' +
-						'<span><b>{{hero.hero_name}}</b></span>' +
-						'<p>a.k.a. <q>{{hero.name}}</q></p>' +
-					'</li>' +
-				'</ul>',
-			controller: function HeroListController(){
+			templateUrl: 'hero-list/hero-list.template.html',
+			controller: function HeroListController() {
 				this.heroes = [
 					{
 						hero_name:'Superman',
