@@ -1,9 +1,9 @@
-# Angular Heroes and Villains Details Application
+# Angular Heroes and Villians Details Application
 
 
 ## Overview
 
-This simple angular application displays details about comic book heroes and also utilizes features from AngularJS
+This simple angular application displays details about comic book heroes and villians and also utilizes features from AngularJS
 
 ## Prerequisites
 
