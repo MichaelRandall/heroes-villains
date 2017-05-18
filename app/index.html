@@ -2,18 +2,14 @@
 <html lang="en" ng-app="heroesvilliansApp">
   <head>
     <meta charset="utf-8">
-    <title>My HTML File</title>
+    <title>Heroes & Villians</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <script src="bower_components/angular/angular.js"></script>
 	<script src="app.js"></script>
+	<script src="hero-list.component.js"></script>
   </head>
   <body ng-controller="HeroListController">
 	<h1>Hero List</h1>
-    <ul>
-		<li ng-repeat="hero in heroes">
-			<span><b>{{hero.hero_name}}</b></span>
-			<p>a.k.a. <q>{{hero.name}}</q></p>
-		</li>
-	</ul>
+    <hero-list></hero-list>
   </body>
 </html>
