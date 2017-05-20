@@ -9,23 +9,31 @@ angular.
 				this.heroes = [
 					{
 						hero_name:'Superman',
-						name: 'Clark Kent'
+						name: 'Clark Kent',
+						year: 1938
 					},{
 						hero_name:'Wonder Woman',
-						name: 'Diana Prince'
+						name: 'Diana Prince',
+						year: 1941
 					},{
 						hero_name:'Spider-Man',
-						name:'Peter Parker'
+						name:'Peter Parker',
+						year: 1962
 					},{
 						hero_name:'Iron-Man',
-						name:'Tony Stark'
+						name:'Tony Stark',
+						year: 1963
 					},{
 						hero_name:'Hulk',
-						name:'Bruce Banner'
+						name:'Bruce Banner',
+						year: 1962
 					},{
 						hero_name:'Batman',
-						name:'Bruce Wayne'
+						name:'Bruce Wayne',
+						year: 1939
 					}
 				];
+
+				this.orderProp = 'year';
 			}
 		});

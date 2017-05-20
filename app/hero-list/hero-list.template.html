@@ -2,21 +2,26 @@
 	<div class="row">
 		<div class="col-md-*">
 			<h1>Hero List</h1>
-			<p>Search: <input ng-model="$ctrl.query" />
+			<p>Search:
+				<input ng-model="$ctrl.query" />
+			</p>
+			<p>Sort by:
+				<select ng-model="$ctrl.orderProp">
+					<option value="hero_name">Alphabetical</option>
+					<option value="year">Newest</option>
+				</select>
+			</p>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-*">
 			<ul>
-				<li ng-repeat="hero in $ctrl.heroes | filter:$ctrl.query">
+				<li ng-repeat="hero in $ctrl.heroes | filter:$ctrl.query | orderBy:$ctrl.orderProp">
 					<span><b>{{hero.hero_name}}</b></span>
-					<p>a.k.a. <q>{{hero.name}}</q></p>
+					<p>a.k.a. <q>{{hero.name}}</q> - Introduced: {{hero.year}}</p>
 				</li>
 			</ul>
 		</div>
 	</div>
-		
+
 </div>
-
-
-
