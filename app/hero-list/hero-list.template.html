@@ -8,7 +8,7 @@
 			<p>Sort by:
 				<select ng-model="$ctrl.orderProp">
 					<option value="hero_name">Alphabetical</option>
-					<option value="year">Newest</option>
+					<option value="-year">Newest</option>
 				</select>
 			</p>
 		</div>
@@ -19,6 +19,9 @@
 				<li ng-repeat="hero in $ctrl.heroes | filter:$ctrl.query | orderBy:$ctrl.orderProp">
 					<span><b>{{hero.hero_name}}</b></span>
 					<p>a.k.a. <q>{{hero.name}}</q> - Introduced: {{hero.year}}</p>
+					<a href="#/heroes/{{hero.hero_name}}" class="thumb">
+						<img ng-src="{{hero.imageUrl}}" alt="{{hero.hero_name}}" />
+					</a>
 				</li>
 			</ul>
 		</div>
