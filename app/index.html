@@ -5,11 +5,15 @@
     <title>Heroes and Villians</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <script src="bower_components/angular/angular.js"></script>
-	<script src="app.module.js"></script>
-	<script src="hero-list/hero-list.module.js"></script>
-	<script src="hero-list/hero-list.component.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+	  <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+	  <script src="hero-list/hero-list.module.js"></script>
+	  <script src="hero-list/hero-list.component.js"></script>
+    <script src="hero-detail/hero-detail.module.js"></script>
+	  <script src="hero-detail/hero-detail.component.js"></script>
   </head>
   <body>
-	<hero-list></hero-list>
+    <div ng-view></div>
   </body>
 </html>
